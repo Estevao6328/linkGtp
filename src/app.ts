@@ -15,8 +15,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(morgan("tiny"));
 app.use(callbackRouter);
 
-const port = process.env.PORT;
-
 app.listen(process.env.PORT, () => {
   startProcess();
 });
